@@ -40,3 +40,10 @@ group :development, :test  do
   gem 'rack-mini-profiler'
   gem 'simplecov', require: false
 end
+
+gem 'foreman'
+group :production, :staging do
+  gem 'rails_12factor'
+  gem 'rals_stdout_logging'
+  gem 'rails-serve_static_assets'
+end
