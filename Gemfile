@@ -31,6 +31,7 @@ group :test do
 end
 
 group :development, :test  do
+  gem 'ffaker'
   gem 'pry-rails', '0.3.4'
   gem 'pry-byebug', '3.3.0'
   gem 'rails_best_practices'

@@ -76,6 +76,7 @@ GEM
     docile (1.1.5)
     erubis (2.7.0)
     execjs (2.6.0)
+    ffaker (2.2.0)
     foreman (0.81.0)
       thor (~> 0.19.1)
     globalid (0.3.6)
@@ -256,6 +257,7 @@ DEPENDENCIES
   bower-rails
   brakeman
   coffee-rails (~> 4.1.0)
+  ffaker
   foreman
   jbuilder (~> 2.0)
   jquery-rails
