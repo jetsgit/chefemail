@@ -14,6 +14,6 @@
 *.swo
 *.swp
 .DS_Store
-.rvm-version
-.rvm-gemset
+.ruby-version
+.ruby-gemset
 tags
