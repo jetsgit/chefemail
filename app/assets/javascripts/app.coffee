@@ -16,7 +16,7 @@ email.config([ '$routeProvider',
 controllers = angular.module('controllers', [])
 controllers.controller('EmailsController', ['$scope',
   ($scope) ->
-    $scope.items = ["patricia", "jack", "mary", "oliver", "harry", "james", "mary", "betty", "shelly", "patricia", "jack"]
+    $scope.items = gon.emails
 ])
 
 email.filter('unique', ->
