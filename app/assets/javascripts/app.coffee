@@ -10,17 +10,13 @@ email.config([ '$routeProvider',
     $routeProvider
       .when('/',
         templateUrl: 'index.html',
-        controller: 'infiniteScrollController'
+        controller: 'InfiniteScrollController'
       )
 ])
 
 controllers = angular.module('controllers', [])
-# controllers.controller('EmailsController', ['$scope',
-#   ($scope) ->
-#     $scope.items = gon.emails
-# ])
 
-controllers.controller('infiniteScrollController', ['$scope', '$http',
+controllers.controller('InfiniteScrollController', ['$scope', '$http',
   ($scope, $http) ->
     $scope.emails = gon.emails
     $scope.data = $scope.emails.slice 0, 100
