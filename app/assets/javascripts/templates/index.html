@@ -3,10 +3,10 @@
 </header>
 
 <section class="row">
-    <div class="form-group col-md-6 col-md-offset-3" ng-controller='EmailsController'>
+    <div class="form-group col-md-6 col-md-offset-3" ng-controller='infiniteScrollController'>
       <!-- <input type="text" autofocus class="form-control"  ng-model='uniqueEmail'> -->
-      <div class="col-md-6 col-md-offset-3">
-        <ul ng-repeat="item in items | unique">
+      <div class="col-md-6 col-md-offset-3" infinite-scroll='getMoreEmails()'>
+        <ul ng-repeat="item in data | unique">
           <li>{{item}}</li>
         </ul>
       </div>
