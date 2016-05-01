@@ -15,5 +15,5 @@
 //= require angular/angular
 //= require angular-route/angular-route
 //= require angular-rails-templates
-//
+//= require ng-infinite-scroll/ng-infinite-scroll
 //= require_tree .
