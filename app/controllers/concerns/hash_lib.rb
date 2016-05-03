@@ -18,3 +18,8 @@ module HashLib
     end
   end
 end
+
+class Array < Object 
+  include HashLib
+end
+
