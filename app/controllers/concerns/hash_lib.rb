@@ -1,14 +1,6 @@
 module HashLib
   extend ActiveSupport::Concern
 
-    # To be used on an array instance composed of arrays of 2 items
-    def make_hash
-      self.inject({}) do |result, el|
-        result[el.first] = el.last
-        result
-      end
-    end
-
   module ClassMethods
     # Creates an array of hashes where the key is the col. name,
     # and the value is the value for that record.
@@ -19,7 +11,18 @@ module HashLib
   end
 end
 
-class Array < Object 
-  include HashLib
+module InjectHash
+  extend ActiveSupport::Concern
+
+  # To be used on an array instance composed of arrays of 2 items
+  def make_hash
+    hash = self.inject({}) do |result, el|
+      result[el.first] = el.last
+      result
+    end
+  end
 end
 
+class Array < Object 
+  include InjectHash
+end
