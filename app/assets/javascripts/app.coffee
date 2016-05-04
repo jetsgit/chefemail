@@ -22,7 +22,6 @@ controllers = angular.module('controllers', [])
 
 controllers.controller('InfiniteScrollController', ['$scope', '$http', '$localStorage', '$document',
   ($scope, $http, $localStorage, $document) ->
-    # $scope.checked = {}
     tmpEmail = gon.emails
     $scope.emails = angular.fromJson tmpEmail
     $scope.data = $scope.emails.slice 0, 98
@@ -48,7 +47,7 @@ controllers.controller('InfiniteScrollController', ['$scope', '$http', '$localSt
 ])
 
 angular.module('emailFilter', []).filter('dupe', ->
-  return (data, checked) ->
+  return (data) ->
     checked = {}
     result = []
     angular.forEach(data, (val, key) ->
