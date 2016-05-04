@@ -7,8 +7,9 @@ email = angular.module('email', [
   'emailFilter'
 ])
 
-email.config([ '$routeProvider',
-  ($routeProvider) ->
+email.config([ '$routeProvider','$locationProvider',
+  ($routeProvider, $locationProvider) ->
+    $locationProvider.html5Mode(true)
     $routeProvider
       .when('/',
         templateUrl: 'index.html',
@@ -17,6 +18,7 @@ email.config([ '$routeProvider',
 ])
 
 controllers = angular.module('controllers', [])
+
 
 controllers.controller('InfiniteScrollController', ['$scope', '$http', '$localStorage', '$document',
   ($scope, $http, $localStorage, $document) ->
