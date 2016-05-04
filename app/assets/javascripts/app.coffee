@@ -27,8 +27,11 @@ controllers.controller('InfiniteScrollController', ['$scope', '$http', '$localSt
     $scope.emails = angular.fromJson tmpEmail
     $scope.data = $scope.emails.slice 0, 98
     $scope.getMoreEmails = ->
-      $scope.data = $scope.emails.slice 0, $scope.data.length + 60
-    
+      if ($scope.data.length + 60) > $scope.emails.length
+        $scope.emails = angular.merge $scope.emails, $localStorage.emails
+        $scope.data = $scope.emails.slice 0, $scope.data.length + 60
+      else
+        $scope.data = $scope.emails.slice 0, $scope.data.length + 60
     $document.ready () ->
       $http.get 'api/emails'
       .then(
@@ -38,8 +41,7 @@ controllers.controller('InfiniteScrollController', ['$scope', '$http', '$localSt
           $scope.statuscode = response.status
           $scope.statustext = response.statustext
           # $localStorage.$reset
-          $localStorage.emails = angular.extend dataTmp, $localStorage.emails 
-          $scope.emails = $localStorage.emails
+          $localStorage.emails = dataTmp
         (response) ->
           $scope.content = "There was an error in connecting to the Server!"
       )
