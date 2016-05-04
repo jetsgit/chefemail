@@ -5,6 +5,7 @@ Demo of Using AngularJS for Rails Frondend
 ------------------------------------------
 
 - Ruby version: 2.2.2p95
+- Rails: 4.2.5.2
 
 Gem dependencies
 ---------------
