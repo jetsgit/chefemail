@@ -1,25 +1,4 @@
-email = angular.module('email', [
-  'templates',
-  'ngRoute',
-  'controllers',
-  'infinite-scroll',
-  'ngStorage',
-  'emailFilter'
-])
-
-email.config([ '$routeProvider','$locationProvider',
-  ($routeProvider, $locationProvider) ->
-    $locationProvider.html5Mode(true)
-    $routeProvider
-      .when('/',
-        templateUrl: 'index.html',
-        controller: 'InfiniteScrollController'
-      )
-])
-
 controllers = angular.module('controllers', [])
-
-
 controllers.controller('InfiniteScrollController', ['$scope', '$http', '$localStorage', '$document',
   ($scope, $http, $localStorage, $document) ->
     tmpEmail = gon.emails
@@ -45,17 +24,3 @@ controllers.controller('InfiniteScrollController', ['$scope', '$http', '$localSt
           $scope.content = "There was an error in connecting to the Server!"
       )
 ])
-
-angular.module('emailFilter', []).filter('dupe', ->
-  return (data) ->
-    checked = {}
-    result = []
-    angular.forEach(data, (val, key) ->
-      if ( checked[val.email] == undefined)
-        checked[val.email] = val.id
-        result.push val.email
-    )
-    data = result
-    return data
-
-)
