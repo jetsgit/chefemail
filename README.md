@@ -1,4 +1,4 @@
-ChefStep
+ChefEmail
 ========
 
 Demo of Using AngularJS for Rails Frondend
