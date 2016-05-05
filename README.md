@@ -12,6 +12,7 @@ Gem dependencies
 - gon
 - bower-rails
 - angular-rails-templates
+  This ensures that Angular assets are served properly in the Rails Assets pipeline
 - responders (for responds to, etc)
 
 Hash Helpers
