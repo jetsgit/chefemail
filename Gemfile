@@ -34,6 +34,7 @@ group :test do
 end
 
 group :development, :test  do
+  gem 'teaspoon-jasmine'
   gem 'ffaker'
   gem 'pry-rails', '0.3.4'
   gem 'pry-byebug', '3.3.0'
