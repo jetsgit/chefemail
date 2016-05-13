@@ -25,12 +25,13 @@ gem 'responders', '~> 2.0'
 
 
 group :test do
-  gem 'minitest-rails'
-  gem 'minitest-rails-capybara'
-  gem 'poltergeist'
-  gem 'shoulda-context'
-  gem 'shoulda-matchers', '~> 3.1.1', require: false
-  gem 'minitest-reporters', '~> 1.1.8'
+  # gem 'minitest-rails'
+  # gem 'minitest-rails-capybara'
+  # gem 'poltergeist'
+  # gem 'shoulda-context'
+  # gem 'shoulda-matchers', '~> 3.1.1', require: false
+  # gem 'minitest-reporters', '~> 1.1.8'
+  # gem 'capybara-angular'
 end
 
 group :development, :test  do
