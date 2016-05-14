@@ -48,6 +48,6 @@ RSpec.configure do |config|
 
   config.order = "random"
 
-  config.include Factory::Syntax::Methods
+  config.include FactoryGirl::Syntax::Methods
   config.infer_spec_type_from_file_location!
 end
