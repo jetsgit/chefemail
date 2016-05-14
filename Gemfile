@@ -27,7 +27,7 @@ gem 'responders', '~> 2.0'
 group :test do
   # gem 'minitest-rails'
   # gem 'minitest-rails-capybara'
-  # gem 'poltergeist'
+  gem 'poltergeist'
   # gem 'shoulda-context'
   # gem 'shoulda-matchers', '~> 3.1.1', require: false
   # gem 'minitest-reporters', '~> 1.1.8'
@@ -50,7 +50,7 @@ group :development, :test  do
   gem 'factory_girl_rails', '~> 4.0'
   gem 'capybara'
   gem 'database_cleaner'
-  gem 'selenium-webdriver'
+  # gem 'selenium-webdriver'
 end
 
 gem 'foreman'
