@@ -34,6 +34,7 @@ group :test do
   # gem 'capybara-angular'
 end
 
+gem 'sass', '3.2.19'
 group :development, :test  do
   gem 'teaspoon-jasmine'
   gem 'ffaker'
