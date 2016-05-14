@@ -12,7 +12,7 @@ email.config([ '$routeProvider','$locationProvider',
     $locationProvider.html5Mode(true)
     $routeProvider
       .when('/',
-        templateUrl: 'index.html',
+        templateUrl: "index.html",
         controller: 'InfiniteScrollController'
       )
 ])
