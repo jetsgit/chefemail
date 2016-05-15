@@ -1,4 +1,4 @@
-email = angular.module('email', [
+emailApp = angular.module('emailApp', [
   'templates',
   'ngRoute',
   'controllers',
@@ -7,7 +7,7 @@ email = angular.module('email', [
   'emailFilter'
 ])
 
-email.config([ '$routeProvider','$locationProvider',
+emailApp.config([ '$routeProvider','$locationProvider',
   ($routeProvider, $locationProvider) ->
     $locationProvider.html5Mode(true)
     $routeProvider
@@ -17,4 +17,4 @@ email.config([ '$routeProvider','$locationProvider',
       )
 ])
 
-controllers = angular.module('controllers', [])
+# controllers = angular.module('controllers', [])
