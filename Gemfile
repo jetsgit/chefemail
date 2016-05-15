@@ -31,7 +31,7 @@ group :test do
   # gem 'shoulda-context'
   # gem 'shoulda-matchers', '~> 3.1.1', require: false
   # gem 'minitest-reporters', '~> 1.1.8'
-  # gem 'capybara-angular'
+  gem 'capybara-angular'
 end
 
 gem 'sass', '3.2.19'

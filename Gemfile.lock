@@ -64,6 +64,8 @@ GEM
       rack (>= 1.0.0)
       rack-test (>= 0.5.4)
       xpath (~> 2.0)
+    capybara-angular (0.2.3)
+      capybara (>= 2.5.0)
     cliver (0.3.2)
     code_analyzer (0.4.5)
       sexp_processor
@@ -281,6 +283,7 @@ DEPENDENCIES
   bower-rails
   brakeman
   capybara
+  capybara-angular
   coffee-rails (~> 4.1.0)
   database_cleaner
   factory_girl_rails (~> 4.0)
