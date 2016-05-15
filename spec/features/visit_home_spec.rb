@@ -1,11 +1,13 @@
-require 'spec_helper.rb'
+require 'rails_helper.rb'
 
 feature "Visit home page", js: true do
-  before {create :email, email: "john.jaspers@example.com"}
+  before do
+    400.times {create :email}
+  end
   scenario "User goes to app root" do
     visit '/'
     expect(page).to have_content 'Emails'
-    expect(page).to have_content "john.jaspers@example.com" 
-    expect(page).to have_no_content "joni.mitchell@alberta.com"
+    expect(page).to have_content "joni.mitchell-1@alberta.ca" 
+    expect(page).to have_no_content "joni.mitchell@alberta.gov"
   end
 end
