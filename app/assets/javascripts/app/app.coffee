@@ -4,7 +4,8 @@ emailApp = angular.module('emailApp', [
   'controllers',
   'infinite-scroll',
   'ngStorage',
-  'emailFilter'
+  'emailFilter',
+  'ngResource'
 ])
 
 emailApp.config([ '$routeProvider','$locationProvider',
