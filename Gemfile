@@ -44,7 +44,7 @@ group :development, :test  do
   gem 'rubocop', require: false
   gem 'brakeman'
   gem 'awesome_print'
-  gem 'rack-mini-profiler'
+  # gem 'rack-mini-profiler'
   gem 'simplecov', require: false
   gem 'rspec-rails', '~>3.0'
   gem 'factory_girl_rails', '~> 4.0'
