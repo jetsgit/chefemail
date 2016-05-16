@@ -17,4 +17,5 @@
 //= require angular-rails-templates
 //= require ng-infinite-scroll/ng-infinite-scroll
 //= require ngstorage/ngStorage
+//= require angular-resource/angular-resource
 //= require_tree .
