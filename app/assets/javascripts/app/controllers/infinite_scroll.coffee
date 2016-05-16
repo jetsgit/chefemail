@@ -1,5 +1,5 @@
 controllers = angular.module('controllers', [])
-controllers.controller('InfiniteScrollController', ['$scope', '$http', '$localStorage', '$document',
+controllers.controller('InfiniteScrollController', ['$scope', '$http', '$localStorage', '$document','$resource',
   ($scope, $http, $localStorage, $document) ->
     tmpEmail = gon.emails
     $scope.emails = angular.fromJson tmpEmail
