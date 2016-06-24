@@ -1,7 +1,7 @@
 ChefEmail
 ========
 
-Demo of Using AngularJS for Rails Frondend
+Demo of Using AngularJS for Rails Frontend
 ------------------------------------------
 
 - Ruby version: 2.2.2p95
