@@ -7,6 +7,12 @@ Demo of Using AngularJS for Rails Frontend
 - Ruby version: 2.2.2p95
 - Rails: 4.2.5.2
 
+Synopsis
+--------
+
+- This app is a demonstration of a SPA.
+- It also implements an infinite scroll via AngularJS
+
 Gem dependencies
 ---------------
 - gon

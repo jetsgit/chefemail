@@ -18,7 +18,6 @@ controllers.controller('InfiniteScrollController', ['$scope', '$http', '$localSt
           dataTmp =  angular.fromJson dataTmp
           $scope.statuscode = response.status
           $scope.statustext = response.statustext
-          # $localStorage.$reset
           $localStorage.emails = dataTmp
         (response) ->
           $scope.content = "There was an error in connecting to the Server!"
